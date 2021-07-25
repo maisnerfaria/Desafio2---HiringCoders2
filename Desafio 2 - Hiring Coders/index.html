@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Produtos + Diversidade</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+    </style>
+</head>
+
+
+<header>
+    <div class="container">
+        <h2 class="logo">PRODUTOS + DIVERSIDADE</h2>
+</header>
+
+<body>
+    <!--Imagem Background-->
+    <div class="img-Background" src="diversidade-e-inclusão-removebg-preview.png" alt="Background"></div>
+    
+    <!--Formulários-->
+<form>
+
+        <table class="table1">
+            <caption>Cadastro de Clientes</caption>
+            <!--Nome do cliente-->
+            <tr>
+                <td class="alinharRotulos">Nome:</td>
+                <td><input id="txtIdentCliente" type="text"></td>
+            </tr>
+            <!--Edereço-->
+            <tr>
+                <td class="alinharRotulos">Endereço:</td>
+                <td><input id="txtEndCliente" type="text"></td>
+            </tr>
+            <!--E-mail-->
+            <tr>
+                <td class="alinharRotulos">e-mail:</td>
+                <td><input id="txtEmailCliente" type="text"></td>
+            <tr>
+            <!--Telefone-->
+                <td class="alinharRotulos">Telefone:</td>
+                <td><input id="txtTelCliente" type="number"></td>
+            </tr>
+
+            <!--Botoes-->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Cadastrar" class="alinhaBtns" onclick="validarClientes('txtIdentProduto', 'txtEndCliente', 'txtEmailCliente', 'txtTelCliente')">
+                    <input type="button" value="VerClientes" class="alinhaBtns" onclick="window.open('verClientes.html','_self')">
+                    <input type="reset" value="Limpar" class="alinhaBtns">
+                </td>
+            </tr>
+        </table>
+
+        <table class="table2">
+            <caption>Cadastro de novos produtos</caption>
+            <!--Nome do produto-->
+            <tr>
+                <td class="alinharRotulos">Nome do produto:</td>
+                <td><input id="txtNomeProduto" type="text"></td>
+            </tr>
+            <!--Código do produto-->
+            <tr>
+                <td class="alinharRotulos">Código do produto:</td>
+                <td><input id="txtCodProduto" type="text"></td>
+            </tr>
+            <!--Quantidade do produto-->
+            <tr>
+                <td class="alinharRotulos">Quantidade do produto:</td>
+                <td>
+                    <select id="qtidadeProduto">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+            </tr>
+            <!--Botoes-->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Cadastrar" class="alinhaBtns" onclick="validarProduto('txtNomeProduto','txtCodProduto','qtidadeProduto')">
+                    <input type="button" value="Ver estoque" class="alinhaBtns" onclick="window.open('verEstoque.html','_self')">
+                    <input type="reset" value="Limpar" class="alinhaBtns">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+<!--footer-->
+<div class="footer">
+    <p>Todos os direitos reservados - Produtos + Diversidade</p>
+    <p>Av. Terezina, 535 - Bairro Brasil - Uberlândia-MG</p>
+</div>
+
+<script src="functiondefinitive.js"></script>
+</body>
+
+</html>
